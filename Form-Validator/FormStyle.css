@@ -1,0 +1,96 @@
+/* define font from google fonts , open sans family */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+/* add box sizeing ob all elements */
+* {
+  box-sizing: border-box;
+}
+
+:root{
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+body {
+  color: #f9fafb;
+  font-family: "Open sans", sans-serif; /*font name , font back*/
+  display: flex;                /* all items display flax*/
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;        /*take 100% of view horzintal port*/
+  margin: 0;
+}
+.container{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgb(0,0,0,0.3);
+    width: 400px;
+}
+
+h2{
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+form{
+    padding: 50px 40px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;         /*each child postional its self*/
+}
+
+.form-control label{
+    color:#777;
+    display: block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    display: block;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+.form-control.success input{
+    border-color: var(--success-color);
+}
+
+.form-control.error input{
+    border-color: var(--error-color);
+}
+.form-control small{
+    visibility: hidden;
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.form-control.error small{
+    visibility: visible;
+}
+form button{
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+
+}
+
+
+
+
+
+
+
